@@ -7,7 +7,7 @@ function Apresentation () {
 
         <div className="apresentation-container">
 
-            <div className="photo"></div>
+            <div className="photo">Foto de perfil</div>
 
         </div>
 
