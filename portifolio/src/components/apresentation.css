@@ -3,16 +3,86 @@
     position: relative;
     width: 100%;
     height: 95vh;
-    background: linear-gradient(to right, rgb(36, 84, 226) 70%, rgb(95, 235, 177) 30%);
+    background: linear-gradient(to right, rgb(0, 8, 33) 70%, rgb(0, 31, 66) 30%);
+    display: flex;
+    align-items: center;
 }
 
 .photo{
     position: absolute;
-    width: 20%;
-    height: 40%;
-    left: 61%;
+    width: 25%;
+    height: 45%;
+    left: 58%;
     top: 0px;
     bottom: 0px;
     margin: auto;
     background-color: white;
+}
+
+.title{
+    padding-left: 200px;
+    color: white;
+    line-height: 60px;
+}
+
+.title h1{
+    font-size: 5rem;
+}
+
+.title ul{
+    display: flex;
+    font-size: 2rem;
+    list-style: disc;
+}
+
+.title li{
+    margin-left: 40px;
+    transition: 250ms;
+}
+
+.title li:hover{
+    color: rgb(1, 55, 117);
+    padding-left: 15px;
+}
+
+.github-Icon{
+    position: absolute;
+    width: 30px;
+    height: auto;
+    left: 30px;
+    top: 30px;
+    filter: invert(100%);  
+    transition: 250ms; 
+}
+
+.github-Icon:hover{
+    scale: 1.08;
+}
+
+
+
+
+/*querys*/
+
+@media screen and (max-width: 1000px) {
+
+    .apresentation-container{
+        height: 120vh;
+        align-items: normal;
+        background: linear-gradient(to right, rgb(0, 8, 33) 100%, rgb(0, 31, 66) 0%);
+    }
+    
+    .photo{
+        width: 30%;
+        height: 30%;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        top: 40%;
+    }
+
+    .title{
+        padding-top: 150px;
+    }
+
 }
