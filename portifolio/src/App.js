@@ -2,9 +2,7 @@ import './App.css';
 
 //components
 import Apresentation from './components/apresentation';
-
-const innerWidth = window.innerWidth; 
-console.log(innerWidth);
+import About from './components/about';
 
 
 function App() {
@@ -12,6 +10,7 @@ function App() {
     <div className="App">
 
       <Apresentation />
+      <About />
 
     </div>
   );

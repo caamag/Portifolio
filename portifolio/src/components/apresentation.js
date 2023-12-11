@@ -23,7 +23,7 @@ function Apresentation () {
                 <ul>
 
                     <li>React.js</li>
-                    <li>Node.js</li>
+                    <li>APIs</li>
                     <li>ES6</li>
 
                 </ul>
