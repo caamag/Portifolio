@@ -17,12 +17,28 @@
     bottom: 0px;
     margin: auto;
     background-color: white;
+    transition: 800ms;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.photoVisible{
+    opacity: 1;
+    visibility: visible;
 }
 
 .title{
-    padding-left: 200px;
     color: white;
     line-height: 60px;
+    transition: 800ms;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.visible{
+    opacity: 1;
+    padding-left: 200px;
+    visibility: visible;
 }
 
 .title h1{
