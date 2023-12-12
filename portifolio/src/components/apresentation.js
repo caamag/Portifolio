@@ -9,6 +9,9 @@ import React, {useState, useEffect} from 'react';
 
 function Apresentation () {
 
+    //sidebar
+
+
     //title animation 
     const [visible, setVisible] = useState(false);
 
@@ -47,9 +50,9 @@ function Apresentation () {
 
             <Nav />
 
-            <div className={photoClass}></div>
-
             <a href="https://github.com/caamag" target="blank_"><img className="github-Icon" src="./github.png" alt="githubIcon" /></a>
+
+            <div className={photoClass}></div>
 
             <div className={titleClass}>
 

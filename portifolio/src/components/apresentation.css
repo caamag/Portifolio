@@ -16,7 +16,7 @@
     top: 0px;
     bottom: 0px;
     margin: auto;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     transition: 800ms;
     opacity: 0;
     visibility: hidden;
@@ -70,6 +70,7 @@
     top: 30px;
     filter: invert(100%);  
     transition: 250ms; 
+    z-index: 3;
 }
 
 .github-Icon:hover{

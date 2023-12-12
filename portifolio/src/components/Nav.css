@@ -1,0 +1,107 @@
+
+.Navegation{
+    position: absolute;
+    width: 350px;
+    height: 400px;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.Navegation button{
+    position: absolute;
+    position: fixed;
+    width: 30px;
+    height: auto; 
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.Navegation img{
+    width: 100%;
+    filter: invert(100%);
+    transition: 250ms;
+}
+
+.Navegation img:hover{
+    scale: 1.1;
+}
+
+.sidebar{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(16, 16, 16);
+    transition: 500ms;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.visibleNav{
+    opacity: 1;
+    visibility: visible;
+}
+
+.first-list{
+    list-style: none;
+    padding: 40px;
+    font-size: 2rem;
+    font-weight: 100;
+    color: rgb(95, 95, 95);
+    line-height: 45px;
+}
+
+.contacts{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 40px;
+    font-size: 1.6rem;
+    font-weight: 100;
+    color: rgb(95, 95, 95);
+}
+
+.first-list a, .contacts a{
+    text-decoration: none;
+    color: rgb(95, 95, 95);
+}
+
+.first-list li:hover{
+    color: white;
+    transition: 250ms;
+}
+
+.first-list a:hover{
+    color: white;
+    transition: 250ms;
+}
+
+.contacts li:hover{
+    color: white;
+    transition: 250ms;
+}
+
+.contacts a:hover{
+    color: white;
+    transition: 250ms;
+}
+
+/*querys*/
+
+@media screen and (max-width: 500px) {
+    
+    .Navegation{
+        width: 100%;
+        height: 60vh;
+    }
+
+    .sidebar{
+        height: 100%;
+        padding-top: 50px;
+    }
+
+}
