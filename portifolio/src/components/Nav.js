@@ -2,7 +2,7 @@ import './Nav.css';
 
 import { useState } from 'react';
 
-function Nav () {
+function Nav ({showProjects}) {
 
     const [sidebar, setSidebar] = useState(false); 
 
@@ -10,19 +10,22 @@ function Nav () {
 
     const sidebarClass = sidebar ? 'sidebar visibleNav' : 'sidebar'; 
 
+    function reload () {return window.location.reload()}
+
     return (
 
         <div className="Navegation">
 
-            <button onClick={showSidebar}><img src='./nav-icon.png'></img></button>
+            <button className='navegation-button' onClick={showSidebar}><img src='./nav-icon.png'></img></button>
 
             <div className={sidebarClass}>
 
                 <ul className="first-list">
 
-                    <li>Projetos</li>
+                    <li><button onClick={reload}>Home</button></li>
+                    <li><button onClick={showProjects}>Projetos</button></li>
                     <li><a href="./Currículo Caio Magalhães.pdf" target="blank_">CV</a></li>
-                    <li>caiolopesfv@gmail.com</li>
+                    <li><a href="mailto:caiolopesfv@gmail.com" target="blank_">caiolopesfv@gmail.com</a></li>
 
                 </ul>
 
@@ -30,7 +33,7 @@ function Nav () {
 
                     <li><a href="https://www.linkedin.com/in/caio-lopes-programador/" target="blank_">LN</a></li>
                     <li><a href="https://github.com/caamag" target="blank_">GH</a></li>
-                    <li><a href="" target="blank_">WPP</a></li>
+                    <li><a href="https://wa.me/5511966197683" target="blank_">WPP</a></li>
 
                 </ul>
 
@@ -39,7 +42,6 @@ function Nav () {
         </div>
 
     ); 
-
 }; 
 
 export default Nav; 
