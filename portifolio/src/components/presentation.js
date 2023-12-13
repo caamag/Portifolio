@@ -7,7 +7,7 @@ import Nav from './Nav';
 import React, {useState, useEffect} from 'react';    
 
 
-function Apresentation ({showProjects}) {
+function Presentation ({showProjects}) {
 
     //title animation 
     const [visible, setVisible] = useState(false);
@@ -39,8 +39,6 @@ function Apresentation ({showProjects}) {
 
     const photoClass = photoVisible ? 'photo photoVisible' : 'photo'; 
 
-
-
     return (
 
         <div className="apresentation-container">
@@ -69,4 +67,4 @@ function Apresentation ({showProjects}) {
     )
 }
 
-export default Apresentation; 
+export default Presentation; 

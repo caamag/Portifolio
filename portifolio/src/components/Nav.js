@@ -16,7 +16,7 @@ function Nav ({showProjects}) {
 
         <div className="Navegation">
 
-            <button className='navegation-button' onClick={showSidebar}><img src='./nav-icon.png'></img></button>
+            <button className='navegation-button' onClick={showSidebar}><img src='./nav-icon.png' alt='navegation button'></img></button>
 
             <div className={sidebarClass}>
 

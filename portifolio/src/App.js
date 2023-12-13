@@ -1,9 +1,10 @@
 import './App.css';
 
 //components
-import Apresentation from './components/apresentation';
+import Presentation from './components/presentation';
 import About from './components/about';
 import Projects from './components/projects';
+import MainProjects from './components/mainProjects';
 
 import {useState} from 'react'; 
 
@@ -23,12 +24,12 @@ function App() {
     <div className="App">
       
       {/*home page*/}
-      {profilePage == 'home' && <Apresentation showProjects={showProjects}/>}
-      {profilePage == 'home' && <About />}
-
+      {profilePage === 'home' && <Presentation showProjects={showProjects}/>}
+      {profilePage === 'home' && <About />}
+      {profilePage === 'home' && <MainProjects />}
 
       {/*Project page*/}
-      {profilePage == 'projects' && <Projects />}
+      {profilePage === 'projects' && <Projects />}
 
     </div>
   );
