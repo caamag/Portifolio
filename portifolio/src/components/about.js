@@ -1,13 +1,30 @@
 
 import './about.css'; 
 
+import { useEffect, useState } from 'react';
+
 function About () {
+
+    const [aboutTxtClass, setAboutTxtClass] = useState('about-txt'); 
+
+    //scroll animation
+    function handleScroll () {
+
+        const currentScrollY = window.scrollY; 
+
+        if (currentScrollY >= 300) {
+            setAboutTxtClass('about-txt about-txt-visible'); 
+        }
+
+    }
+
+    window.addEventListener('scroll', handleScroll);     
 
     return (
 
         <div className="about-container">
 
-            <div className="about-txt">
+            <div className={aboutTxtClass}>
 
                 <h1>Sobre mim</h1><br />
                 <p>Atualmente estagiário de desenvolvimento na BCR.CX focado no frontend, 

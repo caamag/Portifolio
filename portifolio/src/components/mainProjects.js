@@ -2,15 +2,32 @@
 //Style
 import './mainProjects.css';
 
+import { useState } from 'react';
+
 function MainProjects () {
+
+    const [bannerClass, setBannerClass] = useState('banner'); 
+
+    //Animation scroll:
+    function handleScrollY () {
+
+        const currentScrollY = window.scrollY; 
+
+        if (currentScrollY >= 900) {
+            setBannerClass('banner banner-visible'); 
+        }
+
+    }; 
+
+    window.addEventListener('scroll', handleScrollY); 
 
     return (
 
         <div className='main-projects-container'>
 
-            <h1>Projeto em destaque:</h1>
+            <h1 className='main-projects-title'>Projeto em destaque:</h1>
 
-            <div className='banner'>
+            <div className={bannerClass}>
 
                 <div className='mobile'>
 

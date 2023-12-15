@@ -9,7 +9,7 @@
     justify-content: center;
 }
 
-.main-projects-container h1{
+.main-projects-title{
     padding-bottom: 20px;
     padding-right: 300px;
     color: white;
@@ -23,6 +23,14 @@
     border-radius: 15px;
     display: flex;
     padding: 5px;
+    margin-right: 250px;
+    opacity: 0;
+    transition: 800ms;
+}
+
+.banner-visible{
+    margin-right: 0px;
+    opacity: 1;
 }
 
 .mobile{
@@ -47,6 +55,7 @@
 }
 
 .project-puma-content h1{
+    color: white;
     font-size: 3rem;
     width: 100%;
     margin: 20px;
@@ -121,7 +130,7 @@
         border-top-left-radius: 15px;
     }
 
-    .main-projects-container h1{
+    .main-projects-title{
         padding-right: 0px;
     }
 }

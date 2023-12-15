@@ -1,4 +1,4 @@
-import './apresentation.css'; 
+import './presentation.css'; 
 
 //nav
 import Nav from './Nav';
@@ -7,7 +7,7 @@ import Nav from './Nav';
 import React, {useState, useEffect} from 'react';    
 
 
-function Presentation ({showProjects}) {
+function Presentation ({showProjects, showContactPage}) {
 
     //title animation 
     const [visible, setVisible] = useState(false);
@@ -43,7 +43,7 @@ function Presentation ({showProjects}) {
 
         <div className="apresentation-container">
 
-            <Nav showProjects={showProjects}/>
+            <Nav showProjects={showProjects} showContactPage={showContactPage}/>
 
             <a href="https://github.com/caamag" target="blank_"><img className="github-Icon" src="./github.png" alt="githubIcon" /></a>
 

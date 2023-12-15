@@ -25,7 +25,6 @@ function Nav ({showProjects}) {
                     <li><button onClick={reload}>Home</button></li>
                     <li><button onClick={showProjects}>Projetos</button></li>
                     <li><a href="./Currículo Caio Magalhães.pdf" target="blank_">CV</a></li>
-                    <li><a href="mailto:caiolopesfv@gmail.com" target="blank_">caiolopesfv@gmail.com</a></li>
 
                 </ul>
 
