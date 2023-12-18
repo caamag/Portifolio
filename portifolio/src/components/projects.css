@@ -1,6 +1,89 @@
 
 .projects-container{
     width: 100%;
-    height: 100vh;
-    background: linear-gradient(to right, rgb(0, 8, 33) 80%, rgb(0, 31, 66) 20%);
+}
+
+.projects-content{
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.projects-title{
+    color: white;
+    text-align: center;
+    font-size: 3.5rem;
+    margin-top: 150px;
+}
+
+.projects-subtitle{
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cards{
+    width: 100%;
+    height: 500px;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.card{
+    position: relative;
+    width: 300px;
+    height: 250px;
+    background-color: white;
+    margin: 15px;
+    display: flex;
+    align-items: end;
+    transition: 250ms;
+}
+
+.card:hover{
+    scale: 1.025;
+}
+
+.card img{
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    width: 70px;
+    height: auto;
+}
+
+.card a{
+    text-decoration: none;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    font-size: 2.2rem;
+    color: rgb(117, 71, 243);
+}
+
+.card span{
+    font-size: 1.4rem;
+}
+
+
+
+
+
+
+
+
+/*querys*/
+
+@media screen and (max-width: 840px) {
+    .card{
+        width: 100%;
+    }
 }

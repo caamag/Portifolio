@@ -52,7 +52,7 @@ function MainProjects () {
                     tenham acesso às respostas mais recentes.
                     </p>
 
-                    <button><a href='https://puma6491.zendesk.com/hc/pt-br' target='blank_'>Conferir projeto</a></button>
+                    <button><a href='https://puma6491.zendesk.com/hc/pt-br' target='blank_'>Visitar site</a></button>
 
                 </div>
 
