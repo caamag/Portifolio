@@ -44,7 +44,7 @@ function Projects () {
 
                         <section className='card' key={project.id}>
 
-                            <img src={project.img}></img>
+                            <img src={project.img} alt='project-icon'></img>
                             <a href={project.url} target='blank_'>./{project.title}<br />
                             <span>({project.technologies})</span></a>
 
