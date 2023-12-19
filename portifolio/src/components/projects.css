@@ -43,7 +43,7 @@
     background-color: white;
     margin: 15px;
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     transition: 250ms;
 }
 
