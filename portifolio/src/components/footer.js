@@ -77,7 +77,7 @@ function Footer () {
                     setConfirmClass(false);
                     setFormContentClass(false); 
 
-                }}><img src='./x-btn.png'></img></button>
+                }}><img src='./x-btn.png' alt='x button'></img></button>
 
             </div>
 
