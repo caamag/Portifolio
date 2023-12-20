@@ -28,7 +28,7 @@ function App() {
       {profilePage === 'home' && <Presentation showProjects={showProjects}/>}
       {profilePage === 'home' && <About />}
       {profilePage === 'home' && <MainProjects />}
-      {profilePage === 'home' && <Footer />}
+      {profilePage === 'home' && <Footer/>}
 
       {/*Project page*/}
       {profilePage === 'projects' && <Projects />}

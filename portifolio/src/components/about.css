@@ -93,3 +93,9 @@
     }
 
 }
+
+@media  screen and (min-width: 1350px) {
+    .about-container{
+        height: 60vh;
+    }
+}

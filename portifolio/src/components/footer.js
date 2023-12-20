@@ -22,18 +22,8 @@ function Footer () {
         
         e.preventDefault(); 
 
-        if (!name) {
-            alert('Nome não preenchido corretamente.');
-            return; 
-        }; 
-
-        if (!email) {
-            alert('Email não preenchido corretamente.'); 
-            return; 
-        };
-
-        if (!bio) {
-            alert('A caixa de texto não pode estar vazia.'); 
+        if (!name || !email || !bio) {
+            alert('Preencha as informações corretamente.');
             return; 
         }; 
 
