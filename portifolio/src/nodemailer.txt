@@ -1,57 +1,33 @@
-precisa primeiro usar o "npm install nodemailer"
 
 
-import './footer.css';
-import { useState } from 'react';
-import nodemailer from 'nodemailer';
 
-function Footer() {
-  // ... (seu código existente)
+async function handleSubmit(e) {
+  e.preventDefault();
 
-  async function handleSubmit(e) {
-    e.preventDefault();
+  if (!name || !email || !bio) {
+    alert('Preencha as informações corretamente.');
+    return;
+  }
 
-    if (!name || !email || !bio) {
-      alert('Por favor, preencha todos os campos corretamente.');
-      return;
-    }
-
-    // Configurar o nodemailer
-    const transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-        user: 'seu_email@gmail.com', // Insira seu próprio e-mail aqui
-        pass: 'sua_senha_do_email', // Insira sua própria senha aqui
+  try {
+    const response = await fetch('http://localhost:3001/send-email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
       },
+      body: JSON.stringify({ name, email, bio }),
     });
 
-    // Configurar o e-mail
-    const mailOptions = {
-      from: 'seu_email@gmail.com', // Insira seu próprio e-mail aqui
-      to: 'destinatario@email.com', // Insira o e-mail de destino aqui
-      subject: 'Nova mensagem do formulário de contato',
-      text: `Nome: ${name}\nEmail: ${email}\nMensagem: ${bio}`,
-    };
-
-    try {
-      // Enviar o e-mail
-      await transporter.sendMail(mailOptions);
-
-      // Resetar os valores do formulário
+    if (response.ok) {
       setName('');
       setEmail('');
       setBio('');
-
-      // Mudar as classes para mostrar a confirmação
       setConfirmClass(true);
       setFormContentClass(true);
-    } catch (error) {
-      console.error('Erro ao enviar e-mail:', error);
-      alert('Desculpe, ocorreu um erro ao enviar a mensagem. Tente novamente mais tarde.');
+    } else {
+      console.error('Erro ao enviar o e-mail');
     }
+  } catch (error) {
+    console.error('Erro ao enviar o e-mail', error);
   }
-
-  // ... (o restante do seu código)
 }
-
-export default Footer;

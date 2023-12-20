@@ -182,6 +182,12 @@
         margin-top: 10px;
     }
 
+    .form-content p{
+        width: 70%;
+        margin: 0 auto;
+        font-size: 1.4rem;
+    }
+
 }
 
 @media screen and (max-width: 1000px){
@@ -199,7 +205,10 @@
 @media screen and (max-width: 500px){
 
     .confirmSubmit{
+        top: -250px;
         width: 95%;
     }
+
+
 
 }

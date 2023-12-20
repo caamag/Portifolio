@@ -138,11 +138,14 @@
 @media screen and (max-width: 500px){
 
     .banner{
-        height: 70vh;
+        height: 55vh;
+        padding: 2px;
     }
 
     .main-projects-container h1{
         font-size: 2.5rem;
     }
+
+
 
 }

@@ -18,23 +18,16 @@ function Footer () {
     const [formContentClass, setFormContentClass] = useState(false); 
     const noOpacity = formContentClass ? 'form-content no-opacity' : 'form-content'; 
 
-    function handleSubmit (e) {
-        
+    async function handleSubmit (e) {
+
         e.preventDefault(); 
-
-        if (!name || !email || !bio) {
-            alert('Preencha as informações corretamente.');
-            return; 
-        }; 
-
-        //reset input values; 
-        setName('');
-        setEmail('');  
-        setBio(''); 
     
         //change confirmSubmit and form classes
         setConfirmClass(true);
         setFormContentClass(true); 
+
+        const form = document.querySelector('.form'); 
+            setTimeout(() => {form.submit()}, 1000); 
 
     }; 
 
@@ -47,29 +40,21 @@ function Footer () {
                 <h1 className='footer-title'>Fale comigo!</h1>
                 <p>Dúvidas sobre projeto, contratação e assuntos correlatos.</p>
 
-                <form className='form' onSubmit={handleSubmit}>
+                <form className='form' onSubmit={handleSubmit} action='https://formsubmit.co/caiolopesfv@gmail.com' method='post'>
 
-                <input type="text" name="name" placeholder="Nome:" className='nameInput' value={name} onChange={(e) => {setName(e.target.value)}}/>
-                <input type="email" name="email" placeholder="Email:" className='emailInput' value={email} onChange={(e) => {setEmail(e.target.value)}}/><br /><br />
-                <textarea name="bio" placeholder='Deixe a sua mensagem:' className='bioInput' value={bio} onChange={(e) => {setBio(e.target.value)}}></textarea><br />
+                <input type="hidden" name="_captcha" value="false"/>
+                <input type="hidden" name="_next" value="http://localhost:3000"/>
+                <input type="text" name="name" placeholder="Nome:" className='nameInput' value={name} onChange={(e) => {setName(e.target.value)}} required/>
+                <input type="email" name="email" placeholder="Email:" className='emailInput' value={email} onChange={(e) => {setEmail(e.target.value)}} required/><br /><br />
+                <textarea name="bio" placeholder='Deixe a sua mensagem:' className='bioInput' value={bio} onChange={(e) => {setBio(e.target.value)}} required></textarea><br />
 
-                <button type='submit' className='btn'>Enviar Informações</button>
+                <button className='btn'>Enviar Informações</button>
 
                 </form>
 
             </div>
 
-            <div className={visible}>
-
-                <h1>Mensagem enviada com sucesso!</h1>
-                <button onClick={() => {
-
-                    setConfirmClass(false);
-                    setFormContentClass(false); 
-
-                }}><img src='./x-btn.png' alt='x button'></img></button>
-
-            </div>
+            <div className={visible}><h1>Mensagem enviada com sucesso!</h1></div>  
 
         </div>
 

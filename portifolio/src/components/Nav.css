@@ -21,6 +21,7 @@
     cursor: pointer;
     background: none;
     border: none;
+    z-index: 2;
 }
 
 .Navegation img{
@@ -37,15 +38,14 @@
     width: 100%;
     height: 370px;
     background-color: rgb(16, 16, 16);
-    transition: 500ms;
+    transform: translateY(-150%) translateX(150%);
     opacity: 0;
-    visibility: hidden;
+    transition: 650ms;
 }
 
 .visibleNav{
-    opacity: 1;
-    visibility: visible;
-    transition: 500ms;
+transform: translateY(0%) translateX(0%);
+opacity: 1;
 }
 
 .first-list{
@@ -116,6 +116,21 @@
 /*querys*/
 
 @media screen and (max-width: 500px) {
+
+    .sidebar{
+        width: 100%;
+        height: 370px;
+        background-color: rgb(16, 16, 16);
+        transform: translateX(150%);
+        opacity: 0;
+        transition: 650ms;
+    }
+    
+    .visibleNav{
+    transform: translateX(0%);
+    opacity: 1;
+    }
+    
     
     .Navegation{
         width: 100%;
