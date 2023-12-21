@@ -1,9 +1,9 @@
 
-import './footer.css';
+import './form.css';
 
 import { useState } from 'react';
 
-function Footer () {
+function Form () {
 
     //states form
     const [name, setName] = useState(''); 
@@ -61,4 +61,4 @@ function Footer () {
     )
 }; 
 
-export default Footer;
+export default Form;
