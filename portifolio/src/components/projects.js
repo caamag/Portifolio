@@ -18,9 +18,12 @@ function Projects () {
         img: './clima-icon.png', technologies: 'JS, Rest-Api'},
 
         {id: 4, title: 'Portifólio Pessoal', url: 'https://portifolio-caio-magalhaes-s-projects.vercel.app',
-        img: './icon-principal.png', technologies: 'React.js, Node.js'},
+        img: './icon-principal.png', technologies: 'React.js e Node.js'},
 
-        {id: 5, title: 'Em breve...', url: null,
+        {id: 5, title: 'Help Center Niky Benefícios', url: 'https://niky8517.zendesk.com/hc/pt-br',
+        img: './niky-icon.png', technologies: 'Handlebars, JS'},
+        
+        {id: 6, title: 'Em breve...', url: null,
         img: './sinal-de-interrogacao.png', technologies: 'Em breve'}, 
 
     ]
