@@ -24,13 +24,13 @@
     z-index: 2;
 }
 
-.Navegation img{
+.nav-icon{
     width: 100%;
     filter: invert(100%);
     transition: 250ms;
 }
 
-.Navegation img:hover{
+.nav-icon:hover{
     scale: 1.1;
 }
 
@@ -46,6 +46,7 @@
 .visibleNav{
 transform: translateY(0%) translateX(0%);
 opacity: 1;
+z-index: 10;
 }
 
 .first-list{
@@ -129,6 +130,7 @@ opacity: 1;
     .visibleNav{
     transform: translateX(0%);
     opacity: 1;
+    z-index: 7;
     }
     
     

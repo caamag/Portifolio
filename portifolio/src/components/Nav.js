@@ -14,9 +14,13 @@ function Nav ({showProjects}) {
 
     return (
 
-        <div className="Navegation">
+        <div className='Navegation'>
 
-            <button className='navegation-button' onClick={showSidebar}><img src='./nav-icon.png' alt='navegation button'></img></button>
+            <button className='navegation-button' onClick={() => {
+
+                showSidebar(); 
+
+            }}><img src='./nav-icon.png' className='nav-icon' alt='navegation button'></img></button>
 
             <div className={sidebarClass}>
 
