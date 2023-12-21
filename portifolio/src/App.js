@@ -6,6 +6,7 @@ import About from './components/about';
 import Projects from './components/projects';
 import MainProjects from './components/mainProjects';
 import Form from './components/form';
+import Footer from './components/footer';
 
 import {useState} from 'react'; 
 
@@ -28,7 +29,8 @@ function App() {
       {profilePage === 'home' && <Presentation showProjects={showProjects}/>}
       {profilePage === 'home' && <About />}
       {profilePage === 'home' && <MainProjects />}
-      {profilePage === 'home' && <Form/>}
+      {profilePage === 'home' && <Form />}
+      {profilePage === 'home' && <Footer showProjects={showProjects}/>}
 
       {/*Project page*/}
       {profilePage === 'projects' && <Projects />}

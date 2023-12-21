@@ -34,7 +34,7 @@
     height: 370px;
     top: 0px;
     right: 0px;
-    background-color: rgb(16, 16, 16);
+    background-color: rgb(20, 20, 20);
     transform: translateY(-150%) translateX(150%);
     opacity: 0;
     transition: 650ms;

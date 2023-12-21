@@ -7,7 +7,7 @@ import Nav from './Nav';
 import React, {useState, useEffect} from 'react';    
 
 
-function Presentation ({showProjects, showContactPage}) {
+function Presentation ({showProjects}) {
 
     //title animation 
     const [visible, setVisible] = useState(false);
@@ -43,7 +43,7 @@ function Presentation ({showProjects, showContactPage}) {
 
         <div className="apresentation-container">
 
-            <Nav showProjects={showProjects} showContactPage={showContactPage}/>
+            <Nav showProjects={showProjects}/>
 
             <a href="https://github.com/caamag" target="blank_"><img className="github-Icon" src="./github.png" alt="githubIcon" /></a>
 
