@@ -14,7 +14,7 @@ function Nav ({showProjects}) {
 
     return (
 
-        <div className='Navegation'>
+        <>
 
             <button className='navegation-button' onClick={() => {
 
@@ -42,7 +42,7 @@ function Nav ({showProjects}) {
 
             </div>
 
-        </div>
+        </>
 
     ); 
 }; 

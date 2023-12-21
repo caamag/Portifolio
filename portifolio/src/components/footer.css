@@ -49,7 +49,6 @@
     background: none;
     color: white;
     outline: none;
-    z-index: 5;
     border-bottom: 2px solid white;
 }
 
@@ -68,7 +67,6 @@
     outline: none;
     color: white;
     height: 50px;
-    z-index: 5;
     border-bottom: 2px solid white;
 }
 
@@ -90,7 +88,6 @@
     cursor: pointer;
     font-family: 'Oswald', sans-serif;
     font-weight: 100;
-    z-index: 5;
     transition: 250ms;
 }
 
@@ -113,7 +110,6 @@
     justify-content: center;
     align-items: center;
     scale: 0;
-    z-index: 5;
     transition: 500ms;
 }
 
@@ -169,6 +165,17 @@
 }
 
 @media screen and (max-width: 500px) {
+
+    .footer-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(0, 31, 66);
+    }
+
+    .footer-title{
+        margin-top: 20px;
+    }
 
     .btn{
         width: 80%;

@@ -6,6 +6,7 @@
     background: linear-gradient(to right, rgb(0, 8, 33) 70%, rgb(0, 31, 66) 30%);
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 .photo{
