@@ -43,7 +43,7 @@ function Footer () {
                 <form className='form' onSubmit={handleSubmit} action='https://formsubmit.co/caiolopesfv@gmail.com' method='post'>
 
                 <input type="hidden" name="_captcha" value="false"/>
-                <input type="hidden" name="_next" value="http://localhost:3000"/>
+                <input type="hidden" name="_next" value="https://portifolio-caio-magalhaes-s-projects.vercel.app"/>
                 <input type="text" name="name" placeholder="Nome:" className='nameInput' value={name} onChange={(e) => {setName(e.target.value)}} required/>
                 <input type="email" name="email" placeholder="Email:" className='emailInput' value={email} onChange={(e) => {setEmail(e.target.value)}} required/><br /><br />
                 <textarea name="bio" placeholder='Deixe a sua mensagem:' className='bioInput' value={bio} onChange={(e) => {setBio(e.target.value)}} required></textarea><br />
