@@ -36,6 +36,11 @@
     justify-content: flex-start;
 }
 
+.cards img:first-child{
+    height: 50px;
+    width: auto;
+}
+
 .card{
     position: relative;
     width: 300px;

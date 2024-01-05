@@ -26,11 +26,12 @@ function App() {
     <div className="App">
       
       {/*home page*/}
-      {profilePage === 'home' && <Presentation showProjects={showProjects}/>}
-      {profilePage === 'home' && <About />}
-      {profilePage === 'home' && <MainProjects />}
-      {profilePage === 'home' && <Form />}
-      {profilePage === 'home' && <Footer showProjects={showProjects}/>}
+
+      {profilePage === 'home' && [<Presentation showProjects={showProjects}/>,
+      <About />,
+      <MainProjects />,
+      <Form />,
+      <Footer showProjects={showProjects}/>]}
 
       {/*Project page*/}
       {profilePage === 'projects' && <Projects />}

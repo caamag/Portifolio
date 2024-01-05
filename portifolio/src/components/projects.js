@@ -8,14 +8,14 @@ function Projects () {
 
     const projectCard = [
 
-        {id: 1, title: 'Help center PUMA', url: 'https://puma6491.zendesk.com/hc/pt-br',
-        img: './logo-puma.jpg', technologies: 'JS, Rest-Api, Handlebars'},
+        {id: 1, title: 'Help center Vitacon', url: 'https://vitaconsupport.zendesk.com/hc/en-us',
+        img: './vitacon-icon.jpeg', technologies: 'JS, Zendesk Api, Handlebars'},
 
         {id: 2, title: 'Mini Game', url: 'https://statuesque-unicorn-fc118f.netlify.app',
         img: './game-icon.png', technologies: 'HTML, CSS, JS'},
 
         {id: 3, title: 'Descrição do Clima', url: 'https://preeminent-chebakia-06fcda.netlify.app',
-        img: './clima-icon.png', technologies: 'JS, Rest-Api'},
+        img: './clima-icon.png', technologies: 'JS, Weather Api'},
 
         {id: 4, title: 'Portifólio Pessoal', url: 'https://portifolio-caio-magalhaes-s-projects.vercel.app',
         img: './icon-principal.png', technologies: 'React.js e Node.js'},
